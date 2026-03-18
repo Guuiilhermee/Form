@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/iconform.png" type="image/x-icon">
+    <title>Formulário</title>
+  </head>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+    body{
+        font-family: "Ubuntu", sans-serif;
+    }
+    textarea{
+        resize: none;
+    }
+    input::placeholder{
+        opacity: 45%;
+    }
+  </style>
+
+  <body>
+    <form action="">
+      <!-- PRIMEIRA PARTE DO FORMULÁRIO -->
+      <fieldset>
+        <legend>Introdução</legend>
+
+        <label for="email">Email</label><br />
+        <input type="email" name="email" required id="email" maxlength="100" placeholder="exemplo@gmail.com"/>
+        <br /><br />
+
+        <label for="filhos">Quantidade de filhos</label><br />
+        <input type="number" id="filhos" min="0" max="1000" /><br><br>
+        <input type="date" min="2022-01-15" max="2022-12-15" />
+        <br /><br />
+
+        Possui atividade extra?
+        <label> <input type="radio" name="atvExtra" value="s" />Sim </label>
+        <label> <input type="radio" name="atvExtra" value="n" />Não </label>
+        <br /><br />
+      </fieldset>
+
+      <!-- SEGUNDA PARTE DO FORMULÁRIO -->
+      <fieldset>
+        <legend>Área de Interesse</legend>
+        <label>
+          <input type="checkbox" name="interesse" value="html" checked/>HTML
+        </label>
+        <label>
+          <input type="checkbox" name="interesse" value="css" />CSS
+        </label>
+        <label>
+          <input type="checkbox" name="interesse" value="javascript"/>Javascript
+        </label>
+        <label>
+          <input type="checkbox" name="interesse" value="python" />Python
+        </label>
+        <label>
+          <input type="checkbox" name="interesse" value="java" />Java
+        </label>
+        <br /><br />
+
+        <label>Escolha uma linguagem
+            <br>
+          <select name="linguagem" required multiple size="1">
+              <option value="">Selecione</option>
+            
+            <optgroup label="frontend">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javasacript">Javascript</option>
+            </optgroup>
+
+            <optgroup label="backend">
+                <option value="php">PHP</option>
+                <option value="cplus">C++</option>
+                <option value="csharp">C#</option>
+                <option value="rust">Rust</option>
+            </optgroup>
+
+          </select>
+
+          <input type="text" list="languageList">
+          <datalist id="languageList">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="Javascript">
+            <option value="Java">
+            <option value="Python">
+            <option value="PHP">
+          </datalist>
+        </label>
+      </fieldset>
+
+      <!-- TERCEIRA PARTE DO FORMULÁRIO -->
+      <fieldset>
+        <legend>Mensagem</legend>
+        <textarea name="msg" id="" cols="100" rows="8" maxlength="400"></textarea>
+        <br><br>
+        <textarea cols="100" rows="10" disabled>TERMO DE USO E CONDIÇÕES GERAIS - CONTEÚDO DE GAMES
+
+Pelo presente Termo de Uso, o usuário declara estar ciente e de acordo com as condições abaixo estabelecidas, que regulam o acesso e a utilização do conteúdo disponibilizado neste site, voltado ao segmento de jogos eletrônicos.
+
+1. DO OBJETO
+1.1 O presente contrato tem por objeto regular o uso do site e de seus conteúdos digitais relacionados a games, incluindo, mas não se limitando a textos, imagens, vídeos, análises, tutoriais, notícias e materiais interativos.
+1.2 O conteúdo disponibilizado possui caráter exclusivamente informativo, educativo e recreativo, não constituindo aconselhamento técnico, profissional ou comercial.
+
+2. DO ACESSO E USO
+2.1 O acesso ao site é facultado ao usuário, que se compromete a utilizá-lo de forma lícita, ética e em conformidade com a legislação vigente.
+2.2 É vedada a utilização do site para fins ilícitos, fraudulentos, ofensivos, discriminatórios ou que violem direitos de terceiros.
+
+3. DA PROPRIEDADE INTELECTUAL
+3.1 Todo o conteúdo disponibilizado é protegido pela legislação de direitos autorais e de propriedade intelectual.
+3.2 É proibida a reprodução, distribuição, modificação ou exploração comercial do conteúdo sem autorização expressa do responsável pelo site.
+3.3 Marcas, nomes comerciais e personagens de jogos pertencem a seus respectivos titulares, sendo mencionados apenas para fins informativos.
+
+4. DAS RESPONSABILIDADES
+4.1 O usuário é integralmente responsável pelas informações, comentários ou conteúdos que vier a publicar ou interagir no site.
+4.2 O site não se responsabiliza por danos diretos ou indiretos decorrentes do uso indevido das informações disponibilizadas.
+
+5. DAS MODIFICAÇÕES E SUSPENSÃO
+5.1 O site reserva-se o direito de modificar, suspender ou encerrar, a qualquer tempo, o acesso ou o conteúdo disponibilizado, sem aviso prévio.
+5.2 Este Termo poderá ser alterado a qualquer momento, sendo responsabilidade do usuário consultá-lo periodicamente.
+
+6. DA ACEITAÇÃO
+6.1 Ao utilizar este site, o usuário declara ter lido, compreendido e aceitado integralmente todas as disposições deste Termo de Uso.</textarea>
+        <label for="contrato"><br><br>
+            <input type="checkbox" id="contrato">Li e aceito o contrato
+        </label>
+        <br><br>
+
+        <input type="file">
+      </fieldset>
+
+      <!-- TESTES EM INPUTS NO FORMULÁRIO -->
+      <fieldset>
+        <legend>Alguns Inputs</legend>
+      <input type="hidden" value="abc123">
+
+      <input type="button" value="Button">
+      <button type="submit"><i>Tag button</i></button>
+      <button type="button"><b>Botão</b></button>
+      <br><br>
+
+      <label for="">Input Search</label>
+      <input type="search">
+      <br><br>
+
+      <input type="range" min="0" max="10" step="2">
+      <br><br>
+
+      <input type="time">
+      <br><br>
+
+      <input type="color">
+      </fieldset>
+
+      <br><br>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
