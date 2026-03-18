@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html{
+    background-color: #a8beca;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+h1{
+    text-transform: uppercase;
+    color: #1d1c1c;
+}
+
+form{
+    width: 350px;
+    padding: 1em;
+    background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label{
+    margin-bottom: .25em;
+}
+
+input,
+label{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input{
+    padding: .75em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+    border: 1px solid #bbb;
+    font-size: 1em;
+}
+
+legend{
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: #454e4f;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+.btn{
+    width: fit-content;
+    margin-left: auto;
+    cursor: pointer;
+    background-color: #105f83;
+    color: #fff;
+    font-weight: bold;
+}
+
+.actions{
+    display: flex;
+    gap: 1em;
+}
+
+.btn2{
+    cursor: pointer;
+    background-color: #105f83;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn--apagar{
+    background-color: #831010;
+}
